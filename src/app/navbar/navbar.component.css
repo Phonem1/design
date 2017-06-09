@@ -1,0 +1,72 @@
+/* custom font awesome icons with circular box*/
+.custom-icon {
+  font-size: 35px;
+  background: #f0f0f0;
+  padding: 15px;
+  -webkit-border-radius: 1100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.46);
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+/* if selected change to black color*/
+.highlighted {
+  background: rgba(0, 0, 0, 1);
+}
+
+/* still dotted line that have better spacing at the bottom*/
+.fix-editor {
+  display: none;
+}
+.icon-wrapper {
+  display: inline-block;
+  /*padding: 0 5px;*/
+  padding-top: 15px;
+}
+.highlighted {
+  background: rgba(0, 0, 0, 1);
+}
+.fixedfill {
+  width: 100%;
+  height: 100px;  
+  /*padding: 0 5px;*/
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-image: -webkit-linear-gradient(left, black 33%, rgba(255, 255, 255, 0) 0%);
+  background-image: -moz-linear-gradient(left, black 33%, rgba(255, 255, 255, 0) 0%);
+  background-image: -o-linear-gradient(left, black 33%, rgba(255, 255, 255, 0) 0%);
+  background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 5px 1px;
+  background-repeat: repeat-x;
+}
+
+/* dotted line in the middle*/
+.wrap {  
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  
+}
+.wrap:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-top: 1px solid black;
+  background: black;
+  width: 100%;
+  transform: translateY(-50%);
+}
